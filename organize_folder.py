@@ -11,7 +11,7 @@ for filename in os.listdir(current_folder):
             os.mkdir('Images')
         shutil.copy(filename,"Images")
         os.remove(filename)
-        print ("Images done")
+    print ("Images done")
     #organizr Docs in Documents folder
     if filename.endswith((".doc" , ".docx" , ".pdf" )):
         if not os.path.exists("Documents"):
@@ -19,7 +19,7 @@ for filename in os.listdir(current_folder):
             os.mkdir('Documents')
         shutil.copy(filename,"Documents")
         os.remove(filename)
-        print ("Documents done")
+    print ("Documents done")
     #organizr Videos in Videos folder
     if filename.endswith((".mp4" , ".wemb" , ".mkv" )):
         if not os.path.exists("Videos"):
@@ -27,7 +27,7 @@ for filename in os.listdir(current_folder):
             os.mkdir('Videos')
         shutil.copy(filename,"Videos")
         os.remove(filename)
-        print ("Videos done")
+    print ("Videos done")
     #organizr Audio in Audio folder
     if filename.endswith((".mp3" , ".wave"  )):
         if not os.path.exists("Audio"):
@@ -35,7 +35,7 @@ for filename in os.listdir(current_folder):
             os.mkdir('Audio')
         shutil.copy(filename,"Audio")
         os.remove(filename)
-        print ("Audio done")
+    print ("Audio done")
     #organizr apps in Applications folder
     if filename.endswith((".exe" )):
         if not os.path.exists("Applications"):
@@ -43,7 +43,7 @@ for filename in os.listdir(current_folder):
             os.mkdir('Applications')
         shutil.copy(filename,"Applications")
         os.remove(filename)
-        print ("Applications done")
+    print ("Applications done")
     #organizr Archived folders in Archives folder
     if filename.endswith((".exe" )):
         if not os.path.exists("Archives"):
@@ -51,4 +51,4 @@ for filename in os.listdir(current_folder):
             os.mkdir('Archives')
         shutil.copy(filename,"Archives")
         os.remove(filename)
-        print ("Archives done")
+    print ("Archives done")
