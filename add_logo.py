@@ -12,6 +12,7 @@ for filename in os.listdir('.'):
         continue
     img=Image.open(filename)
     width, height = img.size
+    print("adding logo to image %s" %(filename))
     img.paste(logo_image,(width-logo_width,height-logo_height))
     img.save(os.path.join("Imageswithlogo",filename))
     #os.remove(filename) # enable if you want to remove the original image
