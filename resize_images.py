@@ -21,5 +21,5 @@ for filename in os.listdir('.'):
         image = image.resize((width,height))
     print ("Resizing ..... %s" %(filename))
     image =image.save(os.path.join("ResizedImages",filename))
-    os.remove(filename)
+    #os.remove(filename) # enable if you want to remove the original image
 
